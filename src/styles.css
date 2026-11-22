@@ -1,0 +1,41 @@
+:root { --bg:#f4f6f8; --card:#fff; --ink:#1b2430; --muted:#6b7684; --line:#dfe4ea; --brand:#0b5fa5; --brand-d:#084a82; --bad:#c0392b; --ok:#1e7e4a; }
+* { box-sizing: border-box; }
+body { margin:0; font:15px/1.45 system-ui, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--ink); }
+h1,h2 { margin:0 0 .5rem; } h2 { font-size:1.15rem; }
+.muted,.hint { color:var(--muted); } small { display:block; color:var(--muted); }
+code { background:#eef1f4; padding:1px 6px; border-radius:4px; }
+button { font:inherit; cursor:pointer; border-radius:8px; border:1px solid var(--line); background:#fff; padding:.5rem .9rem; }
+button:disabled { opacity:.55; cursor:not-allowed; }
+.primary { background:var(--brand); color:#fff; border-color:var(--brand); } .primary:hover:not(:disabled){ background:var(--brand-d); }
+.danger { background:var(--bad); color:#fff; border-color:var(--bad); }
+.danger-outline { color:var(--bad); border-color:var(--bad); }
+.ghost { background:transparent; }
+input,select,textarea { font:inherit; width:100%; padding:.5rem .6rem; border:1px solid var(--line); border-radius:8px; background:#fff; }
+label { display:block; font-size:.9rem; color:var(--muted); margin-bottom:.8rem; } label input,label select,label textarea { margin-top:.25rem; color:var(--ink); }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1rem 1.2rem; margin-bottom:1rem; }
+.error { background:#fdecea; color:var(--bad); padding:.6rem .8rem; border-radius:8px; margin:.6rem 0; }
+.ok { background:#e7f5ec; color:var(--ok); padding:.6rem .8rem; border-radius:8px; margin:.6rem 0; }
+.login { min-height:100vh; display:grid; place-items:center; } .login .card { width:min(380px,92vw); }
+h1 span,.brand span { color:var(--brand); }
+.top { display:flex; align-items:center; gap:1.5rem; background:#fff; border-bottom:1px solid var(--line); padding:.6rem 1.2rem; flex-wrap:wrap; }
+.brand { font-weight:700; font-size:1.1rem; } nav { display:flex; gap:.3rem; flex:1; flex-wrap:wrap; }
+.tab { border:0; background:transparent; color:var(--muted); } .tab.on { background:#e8f1fa; color:var(--brand); font-weight:600; }
+.who { display:flex; align-items:center; gap:.8rem; text-align:right; }
+main { padding:1.2rem; max-width:1200px; margin:0 auto; }
+.split { display:grid; grid-template-columns:340px 1fr; gap:1rem; align-items:start; }
+@media (max-width:800px){ .split { grid-template-columns:1fr; } }
+.list,.pane { background:#fff; border:1px solid var(--line); border-radius:12px; padding:1rem; }
+.bar { display:flex; justify-content:space-between; align-items:center; gap:.5rem; margin-bottom:.6rem; }
+.count { background:#e8f1fa; color:var(--brand); border-radius:999px; padding:0 .55rem; font-size:.85rem; }
+.row-item { display:block; width:100%; text-align:left; margin-bottom:.4rem; }
+.row-item.on { border-color:var(--brand); background:#f1f7fd; }
+dl { display:grid; grid-template-columns:140px 1fr; gap:.3rem .8rem; margin:.5rem 0 1rem; } dt { color:var(--muted); } dd { margin:0; }
+.docs { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:.8rem; margin-bottom:1rem; }
+.doc { margin:0; border:1px solid var(--line); border-radius:10px; padding:.5rem; } .doc img { width:100%; max-height:300px; object-fit:contain; background:#f4f6f8; border-radius:6px; }
+.doc figcaption { font-size:.85rem; color:var(--muted); margin-bottom:.3rem; }
+.decision { border-top:1px solid var(--line); padding-top:1rem; } .row { display:flex; gap:.6rem; flex-wrap:wrap; }
+.wide table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+th,td { text-align:left; padding:.55rem .8rem; border-bottom:1px solid var(--line); } th { background:#f8fafb; color:var(--muted); font-weight:600; font-size:.85rem; }
+.inline { display:flex; gap:.6rem; margin-bottom:.8rem; } .inline input { max-width:360px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0 1rem; } .full { grid-column:1/-1; }
+.app-head { display:flex; justify-content:space-between; gap:1rem; margin-bottom:.6rem; } .right { text-align:right; }
