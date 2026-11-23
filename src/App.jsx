@@ -42,7 +42,7 @@ export default function App() {
   return (
     <div className="shell">
       <header className="top">
-        <div className="brand">E-Season <span>Admin</span></div>
+        <div className="brand"><img src="/train_logo.png" alt="" />E-Season <span>Admin</span></div>
         <nav>
           {tabs.map(([key, label]) => (
             <button key={key} className={key === active[0] ? 'tab on' : 'tab'} onClick={() => setTab(key)}>{label}</button>

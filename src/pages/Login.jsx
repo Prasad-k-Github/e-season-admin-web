@@ -18,6 +18,7 @@ export default function Login({ onLogin }) {
   return (
     <div className="login">
       <form className="card" onSubmit={submit}>
+        <img className="logo" src="/train_logo.png" alt="" />
         <h1>E-Season <span>Admin</span></h1>
         <p className="muted">Sign in with your staff account.</p>
         <label>E-mail<input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoFocus /></label>
