@@ -6,13 +6,15 @@ import Applications from './pages/Applications.jsx';
 import Institutions from './pages/Institutions.jsx';
 import StaffPage from './pages/Staff.jsx';
 import Audit from './pages/Audit.jsx';
+import Catalog from './pages/Catalog.jsx';
 
 const ROLE_LABEL = { admin: 'Administrator', institution_officer: 'Institution officer', station_staff: 'Station staff' };
 
 function tabsFor(role) {
   if (role === 'admin') {
     return [['queue', 'Identity checks', Queue], ['institutions', 'Institutions', Institutions],
-      ['staff', 'Staff accounts', StaffPage], ['audit', 'Audit log', Audit]];
+      ['staff', 'Staff accounts', StaffPage],
+      ['catalog', 'Stations & fares', Catalog], ['audit', 'Audit log', Audit]];
   }
   if (role === 'institution_officer') {
     return [['queue', 'Employee approvals', Queue], ['apps', 'Season applications', Applications]];

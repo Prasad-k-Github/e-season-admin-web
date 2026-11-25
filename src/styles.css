@@ -48,3 +48,6 @@ th,td { text-align:left; padding:.55rem .8rem; border-bottom:1px solid var(--lin
 .inline { display:flex; gap:.6rem; margin-bottom:.8rem; } .inline input { max-width:360px; }
 .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0 1rem; } .full { grid-column:1/-1; }
 .app-head { display:flex; justify-content:space-between; gap:1rem; margin-bottom:.6rem; } .right { text-align:right; }
+
+.check { display:flex; align-items:center; gap:.4rem; white-space:nowrap; margin:0; } .check input { width:auto; }
+.inline { flex-wrap:wrap; align-items:center; } .inline input[type=text],.inline input:not([type]) { max-width:240px; }

@@ -50,5 +50,10 @@ export const api = {
   staff: () => json('/admin/staff'),
   createStaff: (d) => post('/admin/staff', d),
   stations: () => json('/stations'),
+  createStation: (d) => post('/admin/stations', d),
+  fares: () => json('/admin/fares'),
+  createFare: (d) => post('/admin/fares', d),
+  windows: () => json('/admin/application-windows'),
+  createWindow: (d) => post('/admin/application-windows', d),
   audit: (limit = 100) => json(`/admin/audit?limit=${limit}`),
 };
